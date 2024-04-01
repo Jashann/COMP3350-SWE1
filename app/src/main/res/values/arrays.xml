@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sorting_options">
+        <item>Recommendations</item>
+        <item>Lowest prepare time to Highest prepare time</item>
+        <item>Highest rating to lowest rating</item>
+        <item>Easy to Hard</item>
+        <item>Favourited</item>
+
+    </string-array>
+    <string-array name="recipe_difficulty">
+        <item>Easy</item>
+        <item>Moderate</item>
+        <item>Hard</item>
+    </string-array>
+</resources>

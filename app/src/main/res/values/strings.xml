@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">simpliCook</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="recipe_name">Enter Recipe Title</string>
+    <string name="recipe_type">What kind of type?</string>
+    <string name="recipe_description">Add instructions/steps to your recipe!</string>
+    <string name="delete_warning">Are you sure you would like to delete this recipe? If the recipe is deleted it will be gone forever. </string>
+    <string name="confirm_delete">Confirm</string>
+    <string name="save_button">Save</string>
+    <string name="back_button">Back</string>
+</resources>

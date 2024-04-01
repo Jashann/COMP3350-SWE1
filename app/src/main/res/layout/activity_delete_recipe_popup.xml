@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A190FFFF" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <!-- Warning Message -->
+    <TextView
+        android:id="@+id/displayMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="100dp"
+        android:text="@string/delete_warning"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="36sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
+
+    <!--Go Back To Viewing Recipe -->
+    <Button
+        android:id="@+id/cancelDelete"
+        android:layout_width="140dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/displayMessage"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="#03A9F4"
+        android:text="@string/back_button"
+        android:visibility="visible" />
+
+    <!-- Delete Recipe -->
+    <Button
+        android:id="@+id/confirmDelete"
+        android:layout_width="140dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/displayMessage"
+        android:layout_marginTop="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="#03A9F4"
+        android:text="@string/confirm_delete"
+        android:visibility="visible" />
+    </RelativeLayout>
+</ScrollView>

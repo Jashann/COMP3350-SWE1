@@ -1,0 +1,197 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+    <!-- Recipe Details -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewRecipeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Delicious Recipe"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/ratingBarRecipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewRecipeName"
+            android:layout_marginTop="8dp"
+            android:rating="4.8"
+            android:numStars="5"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:stepSize="0.1"
+            android:isIndicator="true"
+            />
+
+
+        <!-- Recipe Type -->
+        <TextView
+            android:id="@+id/textViewTypeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBarRecipe"
+            android:layout_marginTop="16dp"
+            android:text="Type"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textViewRecipeType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTypeTitle"
+            android:layout_marginTop="16dp"
+            android:text="This is recipe's type, dinner, breakfast"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textViewDifficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewRecipeType"
+            android:layout_marginTop="16dp"
+            android:text="\nSkill Level "
+            android:textStyle="italic|bold"
+            android:textSize="14sp"
+            android:textColor="#FF0000"
+            />
+        <TextView
+            android:id="@+id/textViewTimeNeeded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDifficulty"
+            android:text="\nTime needed in mins"
+            android:textStyle="italic|bold"
+            android:textSize="14sp"
+            android:textColor="#FF0000"
+            />
+
+        <!-- Recipe Description -->
+        <TextView
+            android:id="@+id/textViewDescriptionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTimeNeeded"
+            android:layout_marginTop="16dp"
+            android:text="Description"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textViewRecipeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDescriptionTitle"
+            android:layout_marginTop="16dp"
+            android:text="This is a delicious recipe that you will love! Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            android:textSize="16sp"/>
+
+        <!-- Recipe Ingredients  -->
+        <TextView
+            android:id="@+id/textViewIngredientsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewRecipeDescription"
+            android:layout_marginTop="16dp"
+            android:text="Ingredients"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textViewIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewIngredientsTitle"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textSize="16sp"/>
+
+
+
+        <!-- Feedback Rating -->
+        <TextView
+            android:id="@+id/textViewFeedbackTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewIngredients"
+            android:layout_marginTop="16dp"
+            android:text="Give us your feedback"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <RatingBar
+            android:id="@+id/ratingBarFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewFeedbackTitle"
+            android:layout_marginTop="8dp"
+            android:numStars="5"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:stepSize="1"/>
+
+        <!-- Return Button -->
+        <Button
+            android:id="@+id/buttonReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBarFeedback"
+            android:layout_marginTop="16dp"
+            android:text="Go Back"
+            android:onClick="onReturnButtonClick"/>
+
+
+
+    <CheckBox
+        android:id="@+id/favourite_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewRecipeName"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/ratingBarRecipe"
+        android:button="@drawable/selector_favourite_item"
+
+        />
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBarFeedback"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentRight="true"
+            android:text="Delete" />
+
+        <!-- Edit Button -->
+        <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentRight="true"
+            android:width="100dp"
+            android:text="Edit" />
+
+        <Button
+            android:id="@+id/addPlans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBarFeedback"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:onClick="onReturnButtonClick"
+            android:text="add to Plan" />
+
+    </RelativeLayout>
+</ScrollView>

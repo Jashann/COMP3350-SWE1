@@ -1,0 +1,166 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <!-- Recipe Title Text Box-->
+    <EditText
+        android:id="@+id/editRecipeName"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/recipe_name"
+        android:inputType="textPersonName" />
+
+    <!-- Recipe Type Text Box-->
+    <EditText
+        android:id="@+id/editType"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editRecipeName"
+
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/recipe_type"
+        android:inputType="textMultiLine" />
+    <EditText
+        android:id="@+id/preparationTime"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editType"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Time (min)"
+        android:inputType="number"
+        android:maxLength="3"
+        />
+
+    <TextView
+        android:id="@+id/textViewDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/preparationTime"
+        android:layout_marginTop="16dp"
+        android:text="Difficulty:"
+        android:textColor="#515151"
+        android:gravity="start|top"
+        android:textSize="16sp" />
+    <!-- Recipe difficulty selector -->
+    <Spinner
+        android:id="@+id/difficultyLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textViewDifficulty"
+        android:layout_below="@+id/preparationTime"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:entries="@array/recipe_difficulty"
+        />
+
+    <!-- Recipe Type Text Box-->
+    <EditText
+        android:id="@+id/editRecipeDescription"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/difficultyLevel"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        android:gravity="start"
+        android:hint="@string/recipe_description"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="20dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editRecipeDescription"
+        android:layout_marginTop="24dp"
+        android:text="Add New Ingredient"
+        android:textAlignment="center"
+        android:textColor="#030C4A"
+        android:textColorLink="#DF1010"
+        android:textSize="34sp" />
+
+
+    <LinearLayout
+        android:id="@+id/ingredients_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="3dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addIngredientButton"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ingredients_container"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="Add A New Ingredient" />
+    <!-- list_item_layout.xml -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:padding="16dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-5dp">
+        <!-- Previous Page Button -->
+        <Button
+            android:id="@+id/cancelAddRecipeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="36dp"
+            android:layout_marginBottom="6dp"
+            android:text="@string/back_button" />
+
+        <!-- Save Recipe Button -->
+        <Button
+            android:id="@+id/submitRecipeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="36dp"
+            android:layout_marginBottom="6dp"
+            android:insetBottom="6dp"
+            android:text="@string/save_button"
+            android:onClick="buttonSaveOnClick"/>
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginBottom="6dp"
+            android:text="Delete" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

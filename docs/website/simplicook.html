@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>SimpliCook</title>
+    <!-- CDNs -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Script -->
+    <script src="script.js" defer></script>
+</head>
+
+<body class="font-sans bg-purple-50">
+
+    <!-- Navigation Bar -->
+    <nav id="header" class="fixed w-full bg-purple-500 shadow-lg ">
+        <div class="w-full container flex items-center z-20">
+        
+                <img class="pointer-events-none select-none ml-16 mr-8" src="./docs/images/scaredtocompile2.png">
+    
+            <img>
+            <h1 class="cursor-pointer text-white font-bold text-2xl lg:text-3xl" onclick="window.open('https://www.youtube.com/watch?v=uHgt8giw1LY')"
+                   >
+                    SimpliCook 
+            </h1>
+            
+            <!--Pages-->
+            <div class="w-full flex-grow flex items-center lg:w-auto  mt-2  text-black p-4"
+                id="nav-content">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                    <li id = "home_nav" class="mr-3">
+                        <a class="inline-block text-white no-underline hover:text-gray-800 py-2 px-4"
+                            >Home</a>
+                    </li>
+                    <li id = "about_nav" class="mr-3">
+                        <a class="inline-block text-white no-underline hover:text-gray-800 py-2 px-4"
+                            >About Us</a>
+                    </li>
+                    <li id="postmortem_nav">
+                        <a class="inline-block text-white no-underline hover:text-gray-800 py-2 px-4"
+                            >Postmortem</a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <div class="py-40" id="home_page">
+        <div class="w-full flex items-center">
+            <div class="w-1/2  pl-16">
+                <h1 class="mb-4 text-3xl font-bold">
+                    SimpliCook: Collect, Create, and Consume Recipes!
+                </h1>
+                <p class="text-xl">
+                    Created for home cooks and food enthusiasts in any skill level. 
+                    It offers personalized recipes based on dietary preferences and fosters a supportive community for sharing and improving cooking ability. 
+                    The app aims to streamline the cooking process and inspire culinary creativity.
+                </p>
+                <div class="flex items-center justify-center mt-5">
+                    <a id="overview_video" class="cursor-pointer text-white bg-purple-500 hover:bg-purple-600 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5" onclick="window.open('https://youtu.be/7EQtmTFx1Fo')">
+                        Watch the Overview</a>
+                </div>
+            </div>
+            
+            <img class="ml-16 text-center mt-5" src="./docs/images/recipes.jpg" alt="recipes">
+            
+        </div>
+
+       
+        
+    </div>
+
+     <!-- About Us Section -->
+     <div class="py-40 " id="about_us_page">
+        <div class="w-full flex items-center flex-wrap ">
+            <div class="pl-16">
+                <div class="w-2/4">
+                    <h1 class="mb-2 text-3xl font-bold">Our Vision</h1>
+               
+                </div>
+                
+                <div class="w-full flex items-center" >
+                    <p class="w-2/4 mb-8 text-xl">
+                    SimpliCook will provide a simplistic, and straightforward design where food lovers can easily look up, create, and share recipes with others on their phone or tablet. We aim to make the cooking process as efficient and easy as possible, helping users create step-by-step instructions for their recipes. We also want to provide a learning place for all food enthusiasts alike.
+                    We want our users to inspire one another and try out a variety of different recipes by exploring tastes and flavours that they can discover. Further, the app will focus on providing personalized suggestions of recipes based on the user’s favourite recipes and type of diet. The app will be carefully designed to simplify the readability of the recipes, making it both convenient and easy to follow, catering to all users regardless of their culinary expertise.
+                    </p>
+                    <img class="mb-4 ml-24" src="./docs/images/vision.jpg" alt="vision_meme">
+                </div>
+                
+
+                <div class="w-2/4">
+                    <h1 class="mb-2 text-2xl font-bold">Who's It For?</h1>
+                    <p class="mb-8 text-xl">
+                        The target audience is home cooks, food enthusiasts, health-conscious and frugal individuals, as well as those who follow restricted diets such as vegetarians, vegan, halal, keto etc. Because there are many diets, the app will allow users to specify if they follow any restricted diet(s). This will ensure recipes that do not follow their specific diet stay hidden. Additionally, users can include if they have any allergies or partake in any religions that forbid any types of foods, to help avoid recipes with those types of ingredients.
+                    </p>
+                       
+                </div>
+                <div class="flex items-center">
+                    <p class="mb-8 text-xl  w-2/4  ">
+                        The app prioritizes providing users with the flexibility to personalize the content they want to see to suit their needs and tastes. For example, if they encounter a recipe that they do not want to come across again, they will have the option to avoid it, so it would not come up again. Alternatively, our audience may encounter that they are not just cooking for themselves, so they will still be able to find recipes that would otherwise be hidden for themselves if they choose. Also, users can create plans for recipes they want to make for the week. As a result, this will allow quick access to recipes when the time comes to cook.
+                    </p>
+                    <img class="ml-32 w-2/5" src="./docs/images/spiderman.jpg" >
+                </div>
+                
+                <div class="w-2/4">
+                    <p class="mb-8 text-xl">
+                        The app will be a place where users can actively engage with one another, being able to share their opinions on each other's recipes. They can give their praises for wonderful recipes, as well as suggestions as to how one might further improve the recipe, such as different ingredients that others can try instead. This would allow the users to build a supportive and collaborative community, where individuals can connect, learn, and build a sense of belonging with other food enthusiasts.
+                    </p>
+
+                    <h1 class="mb-2 text-2xl font-bold">Our Goals</h1>
+                    <p class="mb-8 text-xl">
+                        Our success is determined by the achievement of two specific goals. One key factor of success will be our users reporting that they have achieved a noticeable amount of improvement in their cooking skills and creativity with the use of the app. Getting user’s opinions will be done through voluntary surveys after regular use of the app. Another indicator of our success lies in the number of users that download the app, reflecting the reach of the app and its influence.
+                    </p>
+                </div>
+                    
+                
+              
+            </div>
+            
+            
+            <div class="w-2/4">
+                <h1 class="pl-16 mb-6 text-4xl font-bold">The Team</h1>
+           
+            </div>
+           
+            <div class="w-full pl-16 flex items-center mb-8">
+                
+                <img class="w-2/5  mr-8" src="./docs/images/team.jpg">
+                <p class="text-2xl mb-8 mr-8 font-bold">Our team is comprised of passionate individuals dedicated to improve the cooking experience. Together, we strive to make cooking more accessible, enjoyable, and rewarding for everyone.</p>
+    
+            </div>
+
+            <div class="w-3/4 pl-16"> 
+                
+                
+                <h2 class="text-xl font-bold">Griffin, LaFreniere</h2>
+                <p class="text-md mb-8">I have learned to look at ways I should separate my code between different layers and how those layers should interact with one another. Additionally, I learned that planning details and organizing information before coding can massively decrease technical debt.</p>
+
+                <h2 class="text-xl font-bold">Patrick, Martinez</h2>
+                <p class="text-md mb-8"> I learned to adhere to SOLID principles,ensuring that my code is maintainable and scalable to adapt to changing requirements. This approach fosters readable and easier-to-understand code that is necessary when collaborating with others.
+                </p>
+
+                <h2 class="text-xl font-bold">Yu, Li </h2>
+                <p class="text-md mb-8">I learned some testing skills like unit test integration test, automated acceptance test, and use mocks, I also learned to use interface often to decouple components.</p>
+
+                <h2 class="text-xl font-bold">Jashanjot Singh, Gill </h2>
+                <p class="text-md mb-8"> I learnt to work in a team, plan things and manage deadlines same as is the case in the real world. I also appreciated the using different layers for making the project modular and how it makes the development easier. I also enjoyed working on the architecture diagram and how it translated into code.
+                </p>
+
+                <h2 class="text-xl font-bold">Luxiang, Lin  </h2>
+                <p class="text-md mb-8"> Learning about the importance of program design and architecture made me realize that a good software system is not just a stack of code, but the result of thoughtful and careful design. By mastering design principles and best practices, I can write clearer, more modular code, which not only improves readability and maintainability but also facilitates future extensions and modifications</p>
+            </div>
+           
+        </div>
+
+        
+    </div>
+    <div class="ml-4 py-40 " id="postmortem_page">
+        <h1 class="mb-4 text-3xl font-bold"> Development
+        </h1>
+        <div class="flex items-center mb-8">
+            <div class="w-2/4">
+                <h2 class="text-xl font-bold">What went right in the development process?</h2>
+                <p> Every group member made significant contributions and collaborated with the others to accomplish tasks. There was also a strong sense of mutual support and assistance among team members which created a collaborative and productive atmosphere.</p>
+            </div>
+            <div class="ml-4 w-auto ">
+                <img src="./docs/images/drakegood.jpg" >          
+            </div>
+        </div>
+        
+        <div class="flex items-center mb-8">
+            <div class="w-2/4">
+                <h2 class="text-xl font-bold">What went wrong in the development process?</h2>
+                <p>Given our success in iteration one, we overestimated our abilities in iteration two as we did not allocate enough time to comfortably meet the deadline. This led to rushing and compromisation of code quality and other tasks as group members became busy with other classes.</p>
+            </div>
+            <div class="w-auto ml-4">
+                <img src="./docs/images/drakebad.jpg" >
+            </div>
+        </div>
+
+        <div class="flex items-center mb-8">
+            <div class="w-2/5">
+                <h2 class="text-xl font-bold">What did you learn about team or large project development?</h2>
+                <p>Clear communication and regular status updates are very important to keep the team aligned and well-informed about project progress and objectives.
+                    Furthermore, working in teams offers different perspectives, teams can solve more effectively as well as generate innovative ideas.</p>
+            </div>
+           
+        </div>
+        
+        <div class="flex items-center mb-8">
+            <div class="w-2/5">
+                <h2 class="text-xl font-bold">What took the most time?</h2>
+                <p>The implementation of the database took a long time as there were issues with initializing the path of the database.
+                     It was completed in iteration two, and it took many hours for multiple group members.
+                </p>
+            </div>
+           
+        </div>
+        <h1 class="ml-4 mb-4 text-3xl font-bold "> Velocity </h1>
+        <img class="pointer-events-none select-none ml-24 mb-8 w-3/4" src="./docs/images/velocity.png">
+        <h1 class="ml-4 mb-4 text-3xl font-bold "> Architecture </h1>
+        <img class="pointer-events-none select-none ml-16 mr-8 justify-center" src="./docs/images/ArchitectureDiagram.png">
+
+    </div>
+
+   
+</body>
+
+</html>
